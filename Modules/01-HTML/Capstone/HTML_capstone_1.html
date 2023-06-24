@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="About Me Page">
+    <meta name="author" content="nasif abdullah">
+    <title>Nasif Abdullah</title>
+    <style>
+        table{
+            width: 40%;
+        }
+
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 6px;
+        }
+
+        p{
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navigational Links</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#aboutme">About Me</a>
+                </li>
+                <li>
+                    <a href="#hobbies">My Hobbies</a>
+                </li>
+                <li>
+                    <a href="#movies">My Favourite Movies</a>
+                </li>
+                <li>
+                    <a href="#footer">Footer</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>Hello readers! My name is Nasif Abdullah. People always call me Nasif or Sif. I am 27 years old this year and I feel old enough. Let's talk about my education background. I was graduating from a university in Bachelor Degree of Electrical and Electronics Engineering since 2021. I also have Diploma in the same field and graduated from the same university since 2017. Currently, I'm working at a company in Penang as a Product Devopment Engineer (PDE) which is junior level in the same field that I studied. The turning point why I want to make a career change from PDE to Sofware Engineer or Software Developer is because I found myself have passion in writing codes and understanding them. Back in 2020 to 2021 which is the year I'm still studying. I have a subject known as 'Capstone' but I don't remember the real name of that subject. This subject require the group of 3 students to implement the idea, knowledge and skill to make an IoT (Intenet of  Things) project. So, that time we need to have knowledge in electrical, function of the sensors and the most important thing is coding. That time we used Arduino Mega and Uno board as part of our project which is microcontroller. So, we have to use Arduino programming language which is based on C/C++. That time I wrote all codes by myself until the project function pretty well but the codes are very messy because I wrote it for the first time from the scratch. The fun fact is I can spend all day long, day and night to make the codes well function without feeling tired. The same thing also happened at the company that I work now. I'd been assigned by my senior to do an automation tool for the software that we had been used to do simulation. That tool had been successfully developed using Python language. I can code day and night without feeling tired but satisfying just like what I did in college. So, from there I decided to proceed with my passion and prioritize it. That's why I choose Sigma School as a platform for me to gain more knowledge in coding although I know it's not possible to become self-thought programmer. There's a quote that sound like this 'If you want to go faster, go alone. But, if you want to go further, go together.'</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <p>After a tiring day at work and going back home, I always spend my time doing what I like, which is considered as hobby. There are 5 things that I like to do as can be seen below but I don't do all of them in a day. It depends on my mood.</p>
+            <ol>
+                <li>Coding</li>
+                <li>Playing video games</li>
+                <li>Playing badminton</li>
+                <li>Editing</li>
+                <li>Swimming</li>
+            </ol>
+        </section>
+
+        <section id="movies">
+            <h2>My Favourite Movies</h2>
+            <p>When I have free time on weekends, I usually spend my time watching movies or series whether on Netflix, Sooka or other platforms. My favourite movies of all time are shown in the table below.</p>
+            <table>
+                <tr>
+                    <th class="header_1">No.</th>
+                    <th>Movie Title</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Jason Bourne</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>The Dark Knight</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Social Network</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="message">
+            <h2>Message</h2>
+            <p>Since you have visited my page, why don't you leave a message or quotes to keep me motivated. Don't forget to enter your name and email before sending the message.</p>
+            <form action="appreciation_page.html" method="get">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="enter your name" id="name" required>
+                </div><br>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="enter your email" id="email" required>
+                </div><br>
+
+                <div>
+                    <label for="message_quote">Message:</label>
+                    <div>
+                        <textarea name="message_quote" id="message_quote" cols="27" rows="10" placeholder="enter your message or quote here!"></textarea>
+                    </div>
+                </div><br>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer id="footer">
+            <h2>Nasif Abdullah</h2>
+            <p>Junior Engineer</p>
+            <p>In case if you want to reach me, I am free after 6pm on weekdays and after 12pm on weekends.</p>
+            <address>
+                <p>Email me at <a href="mailto:nasifafifi96@gmail.com" target="_blank">nasifafifi96@gmail.com</a>.</p>
+                <p>Contact me at <a href="tel:+60137780480" target="_blank">+60137780480</a>.</p>
+            </address>
+            <p>Copyright &#169; 2023 by Nasif Abdullah</p>
+        </footer>
+    </main>
+</body>
+</html>
