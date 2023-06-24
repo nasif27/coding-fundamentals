@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Table</title>
+    <style>
+        table{
+            width: 50%; 
+        }
+
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 6px;
+            background-color: rgb(153, 255, 255);
+        }
+
+        th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 6px;
+            background-color: rgb(55, 214, 214);
+        }
+    </style>
+</head>
+<body>
+    <table class="center">
+        <caption>
+            <h2>Rating of the movies</h2>
+        </caption>
+
+        <tr>
+            <th>No.</th>
+            <th>Movie Title</th>
+            <th>Rating star</th>
+        </tr>
+
+        <tr>
+            <td class="number">1</td>
+            <td>The Dark Knight</td>
+            <td>9.0/10</td>
+        </tr>
+
+        <tr>
+            <td class="number">2</td>
+            <td>Avengers: Endgame</td>
+            <td>8.4/10</td>
+        </tr>
+
+        <tr>
+            <td class="number">3</td>
+            <td>Social Network</td>
+            <td>7.8/10</td>
+        </tr>
+
+        <tr>
+            <td class="number">4</td>
+            <td>Inception</td>
+            <td>8.8/10</td>
+        </tr>
+
+        <tr>
+            <td class="number">5</td>
+            <td>John Wick</td>
+            <td>7.4/10</td>
+        </tr>
+    </table>
+</body>
+</html>
