@@ -1,0 +1,80 @@
+body {
+    /* set default background color */
+    background-color: white;
+    font-weight: bold;
+}
+
+/* minimum width --> >=
+   maximum width --> <= 
+*/
+/* mobile */
+@media (max-width:640px) {
+    /* 
+      - show mobile div
+      - hide tablet and desktop divs
+    */
+    body {
+        background-color: red;
+    }
+
+    .mobile {
+        display: contents;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+/* tablet */
+@media (min-width:640px) {
+    /*
+      - show tablet div
+      - hide mobile and desktop divs
+      - change background color
+    */
+    body {
+        background-color: rgb(52, 216, 52);
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: contents;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+/* desktop */
+@media (min-width:1024px) {
+    /*
+      - show desktop div
+      - hide mobile and tablet divs
+      - change background color
+    */
+    body {
+        background-color: blue;
+        color: white;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: contents;
+    }
+}
