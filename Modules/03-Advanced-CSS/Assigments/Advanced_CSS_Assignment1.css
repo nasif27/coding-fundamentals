@@ -1,0 +1,235 @@
+/* ---------------------- Body -------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: sans-serif;
+}
+
+/* ------------------ Header Section ---------------- */
+
+header {
+    background-color: burlywood;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    color: black;
+    font-weight: 800;
+}
+
+.sub-header-container {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: black;
+    gap: 40px;
+    padding-left: 0;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: rgb(136, 102, 57);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.btn a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* ------------------- Hidden Boxes ----------------- */
+
+.sub-header {
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-header:hover {
+    color: red;
+}
+
+.content-container {
+    display: none;
+    position: absolute;
+    top: 300%; /* Position the box below the list item */
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.sub-header:hover .content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    text-decoration: none;
+    color: rgb(136, 102, 57);
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.content:hover {
+    background-color: rgb(214, 209, 209);
+}
+
+/* ------------------- Hero Section ----------------- */
+
+.hero-section {
+    display: flex;
+    /* display: inline-block; */
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 100px;
+    color: black;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title {
+    width: 600px;
+}
+
+.title h1 {
+    font-size: 50px;
+}
+
+.title p, .fontSize {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.picture1 img {
+    border-radius: 15px;
+}
+
+/* ------------------- Blog Cards ----------------- */
+
+.blog-cards-container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+} 
+
+.blog-card1, .blog-card2, .blog-card3 {
+    display: inline-block;
+    width: 380px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.picture2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture2 img {
+    border-radius: 7px;
+    flex: 1;    /* make the picture fill in the blank space */
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.category li {
+    background-color: burlywood;
+    padding: 7px;
+    border-radius: 40px;
+}
+
+.blog-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+}
+
+.line-decoration {
+    height: 2px;
+    background-color: rgb(185, 180, 180);
+}
+
+.blog-card-space {
+    margin-top: 20px;
+}
+
+/* ------------------- Footer ----------------- */
+
+footer {
+    background-color: burlywood;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------- Mobile Responsiveness ----------- */
+
+@media screen and (max-width: 425px) {
+    .sub-header-container, .btn {
+        display: none;
+    }
+
+    .hero-section {
+        flex-basis: 100%;
+        /* justify-content: space-evenly;
+        align-items: center; */
+        gap: 30px;
+    }
+
+    .picture1 img {
+        /* width: 400px; */
+        width: 100%;
+    }
+
+    .blog-cards-container .column {
+        flex-basis: 100%;
+        margin-top: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .blog-cards-container .blog-card1 {
+        margin-top: 0;
+    }
+}
